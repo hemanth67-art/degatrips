@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kalu Falls Trip – GoAdventure Pvt Ltd</title>
+<style>
+:root{--bg:#f3f8f5;--card:#fff;--text:#16261f;--muted:#536860;--accent:#0f8a6a;--accent2:#e8702a;--line:#d8e5de;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1714;--card:#18231f;--text:#eef4f0;--muted:#9fb3aa;--accent:#3cc9a0;--accent2:#f39058;--line:#2a3a34;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1714;--card:#18231f;--text:#eef4f0;--muted:#9fb3aa;--accent:#3cc9a0;--accent2:#f39058;--line:#2a3a34;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+header{border-bottom:2px solid var(--line);padding:16px 0;font-weight:800;font-size:1.3rem;letter-spacing:-.3px}
+header span{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:34px 0}
+@media (max-width:720px){.hero{grid-template-columns:1fr}}
+h1{font-size:clamp(2rem,7vw,3.2rem);line-height:1.05;margin:0 0 14px;letter-spacing:-1px;text-transform:uppercase}
+.dates{margin:0 0 20px}.dates b{display:block;margin-bottom:8px;color:var(--muted);font-size:.85rem;letter-spacing:1px;text-transform:uppercase}
+.chip{display:inline-block;background:var(--card);border:2px solid var(--accent);color:var(--accent);border-radius:99px;padding:6px 16px;font-weight:700;margin:0 8px 8px 0}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:12px}
+label{display:grid;gap:4px;font-size:.9rem;font-weight:600}
+input,select{font:inherit;padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--text)}
+button{background:var(--accent2);color:#fff;border:0;border-radius:10px;padding:13px;font:inherit;font-weight:700;cursor:pointer}
+#msg{display:none;background:var(--accent);color:#fff;border-radius:10px;padding:12px;font-weight:600}
+.pic{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.pic svg{display:block;width:100%;height:auto}
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px 0 30px}
+@media (max-width:720px){.about{grid-template-columns:1fr}}
+.about div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.about h3{margin:0 0 4px;font-size:1rem}.about p{margin:0;color:var(--muted);font-size:.92rem}
+footer{text-align:center;color:var(--muted);padding:24px 0 30px;font-size:.95rem}
+footer b{display:inline-block;border:2px solid var(--line);border-radius:12px;padding:6px 18px;color:var(--text);letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>Go<span>Adventure</span> Pvt Ltd</header>
+
+<section class="hero">
+<div>
+<h1>Kalu Falls Trip</h1>
+<div class="dates"><b>Dates</b><span class="chip">Nov 10</span><span class="chip">Dec 10</span></div>
+<form id="f">
+<label>Your Name<input id="name" required autocomplete="name" placeholder="Your name"></label>
+<label>Mobile<input id="mobile" type="tel" required autocomplete="tel" inputmode="numeric" pattern="[0-9+ ]{10,14}" placeholder="10-digit mobile number"></label>
+<label>Preferred date<select id="date"><option>Nov 10</option><option>Dec 10</option></select></label>
+<button type="submit">Submit</button>
+<div id="msg" role="status"></div>
+</form>
+</div>
+<div class="pic">
+<svg viewBox="0 0 400 420" role="img" aria-label="Illustration of a waterfall in a green forest">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe6f2"/><stop offset="1" stop-color="#eaf7ef"/></linearGradient><linearGradient id="fall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#9fd8ea"/></linearGradient></defs>
+<rect width="400" height="420" fill="url(#sky)"/>
+<circle cx="320" cy="70" r="30" fill="#ffe28a"/>
+<path d="M0 230 L90 120 L170 200 L250 90 L340 190 L400 140 L400 420 L0 420Z" fill="#4e8f6f"/>
+<path d="M120 130 L270 130 L285 420 L105 420Z" fill="#3b6f55"/>
+<rect x="170" y="125" width="60" height="230" rx="10" fill="url(#fall)"/>
+<g stroke="#fff" stroke-width="3" opacity=".8"><path d="M185 140v200M200 135v210M215 140v200"/></g>
+<ellipse cx="200" cy="362" rx="95" ry="22" fill="#7cc7de"/>
+<ellipse cx="200" cy="356" rx="60" ry="10" fill="#e9f8fc" opacity=".9"/>
+<path d="M0 380 Q100 340 200 385 T400 370 L400 420 L0 420Z" fill="#2c5a45"/>
+<g fill="#1f4636"><path d="M30 390l18-60 18 60z"/><path d="M60 395l14-46 14 46z"/><path d="M320 392l18-62 18 62z"/><path d="M350 396l13-44 13 44z"/></g>
+</svg>
+</div>
+</section>
+
+<section class="about">
+<div><h3>Fixed departures</h3><p>Group trip on set dates, so you can plan ahead and just show up.</p></div>
+<div><h3>Guided and safe</h3><p>Experienced trip leaders look after the group from start to finish.</p></div>
+<div><h3>Easy booking</h3><p>Send your name and mobile number and our team will call you to confirm.</p></div>
+</section>
+
+<footer><b>DEGATRIPS.COM</b></footer>
+</div>
+<script>
+document.getElementById("f").addEventListener("submit",function(e){
+ e.preventDefault();
+ var m=document.getElementById("msg");
+ m.textContent="Thank you, "+document.getElementById("name").value+"! We have noted your request for the "+document.getElementById("date").value+" trip and will call you soon.";
+ m.style.display="block";
+});
+</script>
+</body>
+</html>
